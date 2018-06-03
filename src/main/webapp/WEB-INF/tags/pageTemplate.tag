@@ -1,4 +1,5 @@
 <%@ tag language="java" pageEncoding="UTF-8"%>
+<%@ attribute name="titulo" required="true" %>
 
 <!DOCTYPE html>
 <!-- saved from url=(0036)https://www.casadocodigo.com.br/cart -->
@@ -7,7 +8,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="https://cdn.shopify.com/s/files/1/0155/7645/t/232/assets/favicon.png?567377324649850742" type="image/png">
 	<link href="https://plus.google.com/108540024862647200608" rel="publisher">
-<title>Seu carrinho de compras - Casa do Código</title>
+<title>${titulo} - Casa do Código</title>
 	<meta property="og:site_name" content="casadocodigo.com.br">
     <meta property="og:title" content="Casa do Código - Livros para o programador">
     <meta property="og:description" content="Casa do Código í© uma editora feita de programadores para programadores. Android, iOS, Startups, JavaScript, jQuery, HTML, Agile, Java e mais">

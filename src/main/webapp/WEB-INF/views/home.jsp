@@ -4,7 +4,8 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="tags" %>
-<tags:pageTemplate>
+
+<tags:pageTemplate titulo="Livros de Java, Android, IOs, Mobile e muito mais...">
 	<main>
 		<p class="destaqueDoCupom">
   Use o código <strong class="destaqueDoCupom-codigo"></strong> e tenha <strong class="destaqueDoCupom-desconto">10%</strong> de desconto!

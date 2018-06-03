@@ -5,7 +5,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="tags" %>
-<tags:pageTemplate>
+<tags:pageTemplate titulo="Seu carrinho de compras">
 
 <main>
 		<p class="destaqueDoCupom">

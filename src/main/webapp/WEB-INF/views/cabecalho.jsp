@@ -1,5 +1,6 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <body>
 	<header role="banner" class="cabecalhoPrincipal container">
@@ -120,45 +121,33 @@
 			<nav role="navigation" aria-label="Categorias de livros" class="colecoesDaCDC">
 					<li class="colecoesDaCDC-colecaoItem">
 						<a href="https://www.casadocodigo.com.br/collections/livros-de-programacao" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
-							Programação
+							<fmt:message key="navegacao.categoria.desenvolvimento"/>
 						</a>
 						
 						<nav class="colecoesDaCDC-colecaoItem-subColecoes" style="max-height: 0px;">
 							
 								<li class="colecaoItem-subColecoes-item">
-									<a href="https://www.casadocodigo.com.br/collections/programacao-logica">Lógica</a>
+									<a href="https://www.casadocodigo.com.br/collections/programacao-logica"><fmt:message key="navegacao.categoria.logica"/></a>
 								</li>
 							
 								<li class="colecaoItem-subColecoes-item">
-									<a href="https://www.casadocodigo.com.br/collections/programacao-java">Java</a>
+									<a href="https://www.casadocodigo.com.br/collections/programacao-java"><fmt:message key="navegacao.categoria.java"/></a>
 								</li>
 							
 								<li class="colecaoItem-subColecoes-item">
-									<a href="https://www.casadocodigo.com.br/collections/programacao-net">.NET</a>
+									<a href="https://www.casadocodigo.com.br/collections/programacao-games"><fmt:message key="navegacao.categoria.games"/></a>
+								</li>
+								
+								<li class="colecaoItem-subColecoes-item">
+									<a href="https://www.casadocodigo.com.br/collections/programacao-funcional"><fmt:message key="navegacao.categoria.funcional"/></a>
 								</li>
 							
 								<li class="colecaoItem-subColecoes-item">
-									<a href="https://www.casadocodigo.com.br/collections/programacao-php">PHP</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="https://www.casadocodigo.com.br/collections/programacao-games">Games</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="https://www.casadocodigo.com.br/collections/programacao-oo">OO</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="https://www.casadocodigo.com.br/collections/programacao-funcional">Funcional</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="https://www.casadocodigo.com.br/collections/programacao-outros">Outros</a>
+									<a href="https://www.casadocodigo.com.br/collections/programacao-outros"><fmt:message key="navegacao.categoria.outros"/></a>
 								</li>
 							
 							<li class="colecaoItem-subColecoes-item colecaoItem-subColecoes-item--todos">
-								<a href="https://www.casadocodigo.com.br/collections/livros-de-programacao">Todos</a>
+								<a href="https://www.casadocodigo.com.br/collections/livros-de-programacao"><fmt:message key="navegacao.categoria.todos"/></a>
 							</li>
 						</nav>
 						
@@ -233,6 +222,18 @@
 							</a>
 						</li>
 					</security:authorize>
+					
+					<li class="colecoesDaCDC-colecaoItem">
+					    <a href="?locale=pt" rel="nofollow" class="colecoesDaCDC-colecaoLink ">
+					        <fmt:message key="menu.pt"/>
+					    </a>
+					</li>
+					
+					<li class="colecoesDaCDC-colecaoItem">
+					    <a href="?locale=en_US" rel="nofollow" class="colecoesDaCDC-colecaoLink ">
+					        <fmt:message key="menu.en"/>
+					    </a>
+					</li>
 				
 			</nav>
 			<form role="search" aria-labelledby="rotuloBuscaPrincipal" action="https://www.casadocodigo.com.br/search" method="GET" class="buscaPrincipal">
